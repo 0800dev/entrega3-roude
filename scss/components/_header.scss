@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 1.5rem;
     justify-content: space-around;
     margin: 2%;
 
@@ -34,11 +33,16 @@
     .header {
         animation-name: bio;
         animation-duration: 6s;
+        font-size: 1.5rem;
     }
 }
 @media screen and (min-width:600px) {
     .header-flex-container {
-        font-size: 2.5rem;
+        .div--header {
+        .header {
+        font-size:2.5rem;
+        }
+    }
         .div-box--author {
             .author {
                 font-size: 2rem;
@@ -49,7 +53,11 @@
 
 @media screen and (min-width:806px) {
     .header-flex-container {
+        .div--header {
+        .header {
         font-size: 4rem;
+        }
+    }
         .div-box--author {
             .author {
                 font-size: 3rem;
